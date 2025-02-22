@@ -1,0 +1,99 @@
+{
+  "data": {
+    "date": {
+      "created_at": "2025-02-21",
+      "updated_at": "2025-02-21"
+    },
+    "descriptions": {
+      "app_description": "A brief description of the application functionality.",
+      "app_logo": "https://iili.io/JEptMIR.png",
+      "app_name": "Telex Automated Resume Scanner",
+      "app_url": "https://xphjzkwg-5000.uks1.devtunnels.ms",
+      "background_color": "#HEXCODE"
+    },
+    "integration_category": "Human Resources & Payroll",
+    "integration_type": "output",
+    "is_active": false,
+    "output": [
+      {
+        "label": "email_notifications",
+        "value": true
+      },
+      {
+        "label": "slack_notifications",
+        "value": false
+      }
+    ],
+    "key_features": [
+      "Receive messages from Telex channels.",
+      "Format messages based on predefined templates or logic.",
+      "Send formatted responses back to the channel.",
+      "Log message formatting activity for auditing purposes."
+    ],
+    "permissions": {},
+    "settings": [
+      {
+        "label": "List of Skills required",
+        "type": "text",
+        "required": false,
+        "description": "List of skill to detect in the scanned document",
+        "default": [
+          "HTML", 
+          "CSS", 
+          "Python", 
+          "JavaScript", 
+          "SQL", 
+          "Machine Learning", 
+          "React", 
+          "Node.js", 
+          "Django", 
+          "Flask", 
+          "Tailwind CSS", 
+          "Mongoose", 
+          "Expressjs",
+          "AWS"
+        ]
+      },
+      {
+        "label": "Minimum Skill Match",
+        "type": "number",
+        "required": true,
+        "default": 3,
+        "min": 1,
+        "max": 10,
+        "description": "Set the minimum number of required skill matches (1 - 10)."
+      },      
+      {
+        "label": "Enable Webhook Notifications",
+        "type": "checkbox",
+        "required": false,
+        "default": false,
+        "description": "Enable or disable webhook notifications for skill matches."
+      },
+      {
+        "label": "Custom Webhook URL",
+        "type": "text",
+        "required": false,
+        "default": "",
+        "description": "Provide a custom webhook URL for receiving notifications."
+      },
+      {
+        "label": "Auto-Reject If No Match",
+        "type": "checkbox",
+        "required": true,
+        "default": true,
+        "description": "Automatically reject resumes if no skills match."
+      },
+      {
+        "label": "Auto-Approve If High Match",
+        "type": "checkbox",
+        "required": false,
+        "default": false,
+        "description": "Automatically approve resumes with 80%+ skill match."
+      }
+    ],
+    "target_url": "https://xphjzkwg-5000.uks1.devtunnels.ms/integration-config",
+    "author": "Ali Ogochukwu Peter",
+    "version": "1.0.0"
+  }
+}
