@@ -8,7 +8,7 @@
       "app_description": "A brief description of the application functionality.",
       "app_logo": "https://iili.io/JEptMIR.png",
       "app_name": "Telex Automated Resume Scanner",
-      "app_url": "https://xphjzkwg-5000.uks1.devtunnels.ms",
+      "app_url": "https://resume-scanner-2-hkzb.onrender.com",
       "background_color": "#HEXCODE"
     },
     "integration_category": "Human Resources & Payroll",
@@ -92,7 +92,7 @@
         "description": "Automatically approve resumes with 80%+ skill match."
       }
     ],
-    "target_url": "https://xphjzkwg-5000.uks1.devtunnels.ms/integration-config",
+    "target_url": "https://resume-scanner-2-hkzb.onrender.com/integration-config",
     "author": "Ali Ogochukwu Peter",
     "version": "1.0.0"
   }
