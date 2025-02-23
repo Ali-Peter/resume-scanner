@@ -16,7 +16,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from parsers.pdf_parser import extract_text_from_pdf
 from processing.skill_extractor import extract_skills, extract_contact_info
-from database.db import save_to_db
 
 
 app = Flask(__name__)
@@ -62,8 +61,6 @@ def upload_resume():
     skills = extract_skills(text)
 
     name, email, phone = extract_contact_info(text) or ("", "", "")
-
-    save_to_db(name, email, phone, skills)
 
     response_data = {"name": name, "email": email, "phone": phone, "skills": skills}
 
