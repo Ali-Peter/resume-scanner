@@ -63,7 +63,16 @@ The API will run on **[http://127.0.0.1:5000](http://127.0.0.1:5000)**.
 ## 📌 Usage Instructions
 
 ### 1️⃣ Upload a Resume
-Send a `POST` request to `/upload` with a PDF file:
+Open Postman
+  Change the request type to POST
+    Enter the API URL: http://127.0.0.1:5000/upload
+  Go to the "Body" tab
+    Select "form-data"
+    Add a new key:
+      Key: file
+      Type: File
+    Select a PDF file from your computer
+  Click "Send"
 ```bash
 curl -X POST -F "file=@resume.pdf" http://127.0.0.1:5000/upload
 ```
