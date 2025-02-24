@@ -1,18 +1,18 @@
 # Telex Automated Resume Scanner
 
-## Overview
+## 📌 Overview
 The **Telex Automated Resume Scanner** is an integration that processes uploaded resumes, extracts key information (name, email, phone, and skills), and sends structured notifications to a configured Telex channel.
 
-## Features
--  Upload PDF resumes for automatic parsing.
--  Extracts contact details and skills from resumes.
--  Matches skills against a predefined, configurable skill set.
--  Sends structured notifications to Telex.
--  Provides integration settings via `/integration-config`.
+## ✨ Features
+- Upload PDF resumes for automatic parsing.
+- Extracts contact details and skills from resumes.
+- Matches skills against a predefined, configurable skill set.
+- Sends structured notifications to Telex.
+- Provides integration settings via `/integration-config`.
 
 ---
 
-##  Setup Instructions
+## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
 ```bash
@@ -60,22 +60,26 @@ The API will run on **[http://127.0.0.1:5000](http://127.0.0.1:5000)**.
 
 ---
 
-## 📌 Usage Instructions
+## 🚀 Usage Instructions
 
 ### 1️⃣ Upload a Resume
-Open Postman
-  Change the request type to POST
-    Enter the API URL: http://127.0.0.1:5000/upload
-  Go to the "Body" tab
-    Select "form-data"
-    Add a new key:
-      Key: file
-      Type: File
-    Select a PDF file from your computer
-  Click "Send"
+#### Using **Postman**
+- Open Postman
+- Change the request type to **POST**
+- Enter the API URL: `http://127.0.0.1:5000/upload`
+- Go to the **"Body"** tab
+  - Select **"form-data"**
+  - Add a new key:
+    - **Key:** `file`
+    - **Type:** `File`
+  - Select a PDF file from your computer
+- Click **"Send"**
+
+#### Using **cURL**
 ```bash
 curl -X POST -F "file=@resume.pdf" http://127.0.0.1:5000/upload
 ```
+
 💡 **Response Example:**
 ```json
 {
@@ -125,12 +129,14 @@ gunicorn -w 4 -b 0.0.0.0:5000 app:app
 
 ---
 
-✅ **Telex Notification**
+✅ **Telex Notification Preview**
 ![Telex Notification](assets/telex_notification.png)
+
 ---
 
 ## 👨‍💻 Contributors
 **Ali Ogochukwu Peter** - *Lead Developer*
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.#
+## 📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
